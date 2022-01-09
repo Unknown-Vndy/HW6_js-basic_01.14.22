@@ -156,3 +156,52 @@ do {
    resultLoopTask4 = Number(prompt('solve an example (2 + 2 * 2)'));
 } while (resultLoopTask4 !== 6);
 alert('congrats, you solved the example!');
+
+
+// switch task
+
+let day = Number(prompt('Enter a digit 1-7 for full name of week '));
+
+switch (day) {
+   case 1:
+      alert('Monday');
+      break;
+   case 2:
+      alert('Tuesday');
+      break;
+   case 3:
+      alert('Wednesday');
+      break;
+   case 4:
+      alert('Thursday');
+      break;
+   case 5:
+      alert('Friday');
+      break;
+   case 6:
+      alert('Saturday');
+      break;
+   case 7:
+      alert('Sunday');
+      break;
+   default:
+      alert('inccorect data');
+      break;
+}
+
+day = Number(prompt('Enter a digit of a day to show month decade (1-31 expect)'));
+
+switch (true) {
+   case day >= 1 && day <= 10:
+      alert('First decade');
+      break;
+   case day >= 11 && day <= 20:
+      alert('Second decade');
+      break;
+   case day >= 21 && day <= 31:
+      alert('Third decade');
+      break;
+   default:
+      alert('inccorect data');
+      break;
+}
