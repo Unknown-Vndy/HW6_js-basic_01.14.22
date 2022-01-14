@@ -23,7 +23,7 @@ alert((firstVar + secondVar) / 2);
 const minutes = Number(prompt('Enter minutes'));
 alert(minutes * 60);
 const greetings = 'Hello ';
-let userName = prompt('Enter your name ');
+const userName = prompt('Enter your name ');
 alert(greetings + userName + '!');
 
 // condition tasks
