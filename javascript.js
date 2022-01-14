@@ -58,7 +58,7 @@ if (!test) {
    console.log("You're wrong");
 }
 
-let payment = Number(prompt('Enter total payment '));
+const payment = Number(prompt('Enter total payment '));
 if (payment > 500 && payment <= 800) {
    alert(`Your payment with discount is ${payment - payment * 0.03} UAH`);
 } else if (payment > 800) {
