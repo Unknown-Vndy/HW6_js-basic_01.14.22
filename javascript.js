@@ -13,8 +13,8 @@ num += 11;
 num -= 11;
 num *= 11;
 num /= 11;
-num += 1;
-num -= 1;
+num++;
+num--;
 
 // prompt tasks
 alert(prompt('Enter number') ** 2);
@@ -28,7 +28,7 @@ alert(greetings + userName + '!');
 
 // condition tasks
 console.log('condition tasks');
-let guess = Number(prompt('Enter number to guess '));
+const guess = Number(prompt('Enter number to guess '));
 if (guess === 10) {
    alert("You're right");
 } else {
@@ -36,34 +36,34 @@ if (guess === 10) {
 }
 
 let test = true;
-if (test === true) {
-      console.log("You're right");
-} else if (test === false) {
+if (test) {
+   console.log("You're right");
+} else {
    console.log("You're wrong");
 }
-if (test !== true) {
-      console.log("You're right");
-} else if (test !== false) {
+if (!test) {
+   console.log("You're right");
+} else {
    console.log("You're wrong");
 }
 test = false;
-if (test === true) {
-      console.log("You're right");
-} else if (test === false) {
+if (test) {
+   console.log("You're right");
+} else {
    console.log("You're wrong");
 }
-if (test !== true) {
-      console.log("You're right");
-} else if (test !== false) {
+if (!test) {
+   console.log("You're right");
+} else {
    console.log("You're wrong");
 }
 
 let payment = Number(prompt('Enter total payment '));
-if (payment >= 500 && payment <= 799) {
+if (payment > 500 && payment <= 800) {
    alert(`Your payment with discount is ${payment - payment * 0.03} UAH`);
-} else if (payment >= 800) {
+} else if (payment > 800) {
    alert(`Your payment with discount is ${payment - payment * 0.05} UAH`);
-} else if (payment > 0 && payment < 500) {
+} else if (payment > 0 && payment <= 500) {
    alert(`Your payment doesn't have a discount - ${payment} UAH`)
 } else {
    alert('incorrect payment data');
